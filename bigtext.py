@@ -36,9 +36,18 @@ good=[]
 for d in data:
 	if 'good' in d:
 		good.append(d)
-print('一共有',len(good),'筆留言提到good')		
+print('一共有',len(good),'筆留言提到good')
+# 以上四行快寫法:good = [d          for d in data if 'good' in d]
+#              good = [1          for d in data if 'good' in d]
+#              good = ['bad' in d for d in data if 'good' in d]		
 print(good[0])
+
+bad=[]
+for d in data:
+	bad.append('bad' in d)
+print(bad)	
 #------------------------------------------
+
 
 
 
