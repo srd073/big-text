@@ -55,7 +55,7 @@ print(bad)
 
 # 統計所有的字分別放入dict
 wc= {}
-from d in data:
+for d in data:
 	words=d.split()
 	for word in words:
 		if word in wc:
@@ -71,8 +71,8 @@ print(len(wc))
 print(wc['Allen'])
 
 while True:
-	word=input('請問你想查什麼字：')
-	if word == 'q'
+	word=input('請問你想查什麼字：(q離開)')
+	if word == 'q':
 		break
 	if word in wc:
 		print(word,'出現過的次數為：',wc[word])
